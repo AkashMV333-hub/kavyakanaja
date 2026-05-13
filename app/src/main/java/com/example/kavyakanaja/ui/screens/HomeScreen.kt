@@ -33,8 +33,12 @@ import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.material3.TabRow
+import androidx.compose.material3.Tab
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.buildAnnotatedString
@@ -148,6 +152,7 @@ fun HomeScreen(navController: NavController) {
                 if (poems.value.isNotEmpty()) {
 
                     val poem = poemOfTheDay(poems.value, selectedDateMillis.value)
+                    var cardTabIndex by remember { mutableStateOf(0) }
 
                     Card(
                         modifier = Modifier
@@ -268,6 +273,52 @@ fun HomeScreen(navController: NavController) {
                                     Text("Read")
                                 }
                             }
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(12.dp))
+
+                    // Translation / explanation navbar placed outside the card, below it
+                    val cardTabs = listOf("Translation", "Explanation")
+                    TabRow(selectedTabIndex = cardTabIndex) {
+                        cardTabs.forEachIndexed { idx, t ->
+                            Tab(
+                                selected = cardTabIndex == idx,
+                                onClick = { cardTabIndex = idx }
+                            ) {
+                                Text(
+                                    t,
+                                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 6.dp),
+                                    style = MaterialTheme.typography.bodySmall
+                                )
+                            }
+                        }
+                    }
+
+                    when (cardTabIndex) {
+                        0 -> {
+                            poem.translation?.let { trans ->
+                                val preview = if (trans.length > 120) trans.take(120) + "…" else trans
+                                Text(
+                                    text = preview,
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurface,
+                                    modifier = Modifier.padding(top = 8.dp)
+                                )
+                            } ?: Text(
+                                "Translation not available",
+                                style = MaterialTheme.typography.bodySmall,
+                                modifier = Modifier.padding(top = 8.dp)
+                            )
+                        }
+
+                        1 -> {
+                            val expl = poem.explanationEn ?: poem.explanation
+                            Text(
+                                text = expl ?: "Explanation not available",
+                                style = MaterialTheme.typography.bodySmall,
+                                modifier = Modifier.padding(top = 8.dp)
+                            )
                         }
                     }
 

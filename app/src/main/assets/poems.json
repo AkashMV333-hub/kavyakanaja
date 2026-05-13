@@ -7,7 +7,9 @@
     "text": "ಬೆಳಗಿನ ಕಿರಣಗಳು ಮೃದು ಮುತ್ತುಗಳಿಂದ ಜೀವ ತುಂಬಿಸುತವೆ",
     "lines": ["ಬೆಳಗಿನ ಕಿರಣಗಳು ಮೃದು ಮುತ್ತುಗಳಿಂದ ಜೀವ ತುಂಬಿಸುತವೆ"],
     "meanings": {"ಕಿರಣಗಳು": "rays", "ಬೆಳಗಿನ": "morning", "ಮುತ್ತು": "pearl"},
+    "translation": "Morning rays fill life with soft pearls.",
     "explanation": "ಬೆಳಿಗ್ಗೆಯ ಬೆಳಕಿನ ಸೌಂದರ್ಯ ಮತ್ತು ಹೊಸ ದಿನದ ಪ್ರಾರಂಭದ ಭಾವನೆ.",
+    "explanationEn": "Describes the beauty of morning light and the feeling of a fresh new day.",
     "audio": null,
     "poetBio": "ಕಲ್ಪನಾತ್ಮಕ ಕವಿ - ಸಾರ್ವಜನಿಕ ಉದಾಹರಣೆಗೆ ಬಳಸकೊಳ್ಳಲಾಗಿದೆ."
   },
@@ -19,7 +21,9 @@
     "text": "ಮೃದು ಗಾಳಿ ಮರಗಳ ನಡುವೆ ಹಾಡು ಹಾಡುತ್ತದೆ",
     "lines": ["ಮೃದು ಗಾಳಿ ಮರಗಳ ನಡುವೆ ಹಾಡು ಹಾಡುತ್ತದೆ"],
     "meanings": {"ಮೃದು": "gentle", "ಗಾಳಿ": "wind"},
+    "translation": "A gentle breeze sings among the trees.",
     "explanation": "ಸ್ವಭಾವಿಕ ಶಾಂತಿಯನ್ನು ವರ್ಣಿಸುವ ಸರಳ ಪದ್ಯ.",
+    "explanationEn": "A simple verse depicting natural calm and peacefulness.",
     "audio": null,
     "poetBio": "ಗ್ರಾಮೀಯ ಕವಿ."
   },
@@ -31,7 +35,9 @@
     "text": "ತಾರೆಗಳ ಬೆಳಕು ನದಿಯ ಮೇಲೆ ಪ್ರತಿಬಿಂಬವಾಗಿ ಅಮೃತವನ್ನು ಹಂಚುತ್ತದೆ",
     "lines": ["ತारेಗಳ ಬೆಳಕು ನದಿಯ ಮೇಲೆ ಪ್ರತಿಬಿಂಬವಾಗಿ ಅಮೃತವನ್ನು ಹಂಚುತ್ತದೆ"],
     "meanings": {"ತಾರೆ": "star", "ನದಿ": "river"},
+    "translation": "Starlight reflects on the river, sharing a heavenly glow.",
     "explanation": "ರಾತ್ರಿಯಲ್ಲಿನ ಪ್ರಕಾಶ ಮತ್ತು ಶಾಂತಿಯ ವಾಕ್ಯ.",
+    "explanationEn": "An image of night light and tranquility reflected on the river.",
     "audio": null,
     "poetBio": "ನಗರದ ಕವಿ."
   },
@@ -43,7 +49,9 @@
     "text": "ಹಸಿರುವ ಹೊಳೆ ತುಂಬಿ ಹರಿದು ಹೋಗುತ್ತದೆ",
     "lines": ["ಹಸಿರುವ ಹೊಳೆ ತುಂಬಿ ಹರಿದು ಹೋಗುತ್ತದೆ"],
     "meanings": {"ಹಸಿರು": "green", "ಹೊಳೆ": "stream"},
+    "translation": "The green stream overflows and flows away.",
     "explanation": "ಪ್ರಕೃತಿಯ ಪ್ರವಾಹ ಮತ್ತು ಹೊಸತನದ ಚಿತ್ರಣ.",
+    "explanationEn": "A depiction of nature's flow and a sense of renewal.",
     "audio": null,
     "poetBio": "ಹರಿತ ಚಿಂತನೆಯ ಕವಿ."
   },
@@ -55,7 +63,9 @@
     "text": "ಮನದ ಪಾಳುಗಳು ಮೌನದಿಂದ ತುಡಿವನ್ನು ಹೇಳುತ್ತವೆ",
     "lines": ["ಮನದ ಪಾಳುಗಳು ಮೌನದಿಂದ ತುಡಿವನ್ನು ಹೇಳುತ್ತವೆ"],
     "meanings": {"ಮನ": "mind", "ಮೌನ": "silence"},
+    "translation": "The folds of the mind silently speak their truths.",
     "explanation": "ಆಂತರಿಕ ಭಾವನೆಗಳ ನಿಶ್ಚಲ ವೀಕ್ಷಣೆ.",
+    "explanationEn": "A calm observation of inner feelings and emotions.",
     "audio": null,
     "poetBio": "ಭಾವಗಾಢ ಕವಯಿತ್ರಿ."
   }

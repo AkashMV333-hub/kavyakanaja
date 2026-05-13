@@ -26,10 +26,13 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.unit.dp
+import androidx.compose.material3.TabRow
+import androidx.compose.material3.Tab
 import androidx.navigation.NavController
 import com.example.kavyakanaja.data.Repository
 import com.example.kavyakanaja.data.FavoritesManager
@@ -56,6 +59,8 @@ fun PoemDetailScreen(navController: NavController, poemId: String?) {
 
     val selectedWord = remember { mutableStateOf<Pair<String, String?>>("" to null) }
     val showDialog = remember { mutableStateOf(false) }
+    // Tabs: 0 = Translation, 1 = Explanation
+    var selectedTab by remember { mutableStateOf(0) }
 
     if (poem == null) {
         Column(modifier = Modifier.padding(16.dp)) {
@@ -118,8 +123,9 @@ fun PoemDetailScreen(navController: NavController, poemId: String?) {
                 }
             }, modifier = Modifier.padding(vertical = 8.dp))
 
-            Row(modifier = Modifier.fillMaxWidth(),) {
+            Row(modifier = Modifier.fillMaxWidth()) {
                 Button(onClick = { tts.speak(poem.text) }) { Text("Play (TTS)") }
+
                 Button(onClick = {
                     // toggle favorite
                     CoroutineScope(Dispatchers.IO).launch {
@@ -130,9 +136,32 @@ fun PoemDetailScreen(navController: NavController, poemId: String?) {
                 }
             }
 
-            poem.explanation?.let {
-                Card(modifier = Modifier.padding(top = 16.dp)) {
-                    Text(text = it, modifier = Modifier.padding(12.dp))
+            // Tab row for Translation / Explanation
+            val tabs = listOf("Translation", "Explanation")
+            TabRow(selectedTabIndex = selectedTab) {
+                tabs.forEachIndexed { index, title ->
+                    Tab(selected = selectedTab == index, onClick = { selectedTab = index }) {
+                        Text(title, modifier = Modifier.padding(12.dp))
+                    }
+                }
+            }
+
+            when (selectedTab) {
+                0 -> {
+                    // Translation tab
+                    Text(
+                        text = poem.translation ?: "English translation not available.",
+                        modifier = Modifier.padding(top = 12.dp),
+                        style = MaterialTheme.typography.bodyLarge
+                    )
+                }
+                1 -> {
+                    // Explanation tab (English preferred)
+                    Text(
+                        text = poem.explanationEn ?: poem.explanation ?: "Explanation not available.",
+                        modifier = Modifier.padding(top = 12.dp),
+                        style = MaterialTheme.typography.bodyLarge
+                    )
                 }
             }
         }
