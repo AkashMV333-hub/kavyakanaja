@@ -1,26 +1,697 @@
 [
   {
     "id": "p001",
+    "title": "ಭಾರತ ಭೂಮಿ",
+    "poet": "ಕುವೆಂಪು",
+    "date": "1935-01-01",
+    "text": "ಭಾರತ ಭೂಮಿ ನನ್ನ ತಾಯಿ, ಅವಳ ಮಡಿಲಲ್ಲಿ ನನ್ನ ಜೀವ ಬೆಳೆಯುತ್ತದೆ",
+    "lines": [
+      "ಭಾರತ ಭೂಮಿ ನನ್ನ ತಾಯಿ,",
+      "ಅವಳ ಮಡಿಲಲ್ಲಿ ನನ್ನ ಜೀವ ಬೆಳೆಯುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಭೂಮಿ": "land",
+      "ತಾಯಿ": "mother",
+      "ಜೀವ": "life"
+    },
+    "translation": "India is my motherland, where my life grows in her lap.",
+    "explanation": "ದೇಶಭಕ್ತಿ ಮತ್ತು ತಾಯ್ನಾಡಿನ ಪ್ರೀತಿಯನ್ನು ವ್ಯಕ್ತಪಡಿಸುವ ಪದ್ಯ.",
+    "explanationEn": "A verse expressing patriotism and love for the motherland.",
+    "audio": null,
+    "poetBio": "ಕುವೆಂಪು ಕನ್ನಡದ ಜ್ಞಾನಪೀಠ ಪ್ರಶಸ್ತಿ ಪುರಸ್ಕೃತ ಮಹಾನ್ ಕವಿ ಮತ್ತು ಸಾಹಿತ್ಯಿಕ."
+  },
+  {
+    "id": "p002",
+    "title": "ಮಲೆಗಳ ಹಾಡು",
+    "poet": "ದ. ರಾ. ಬೇಂದ್ರೆ",
+    "date": "1942-05-11",
+    "text": "ಮಲೆಗಳ ಮೌನದಲ್ಲಿ ಪ್ರಕೃತಿಯ ಸಂಗೀತ ಹರಿಯುತ್ತದೆ",
+    "lines": [
+      "ಮಲೆಗಳ ಮೌನದಲ್ಲಿ",
+      "ಪ್ರಕೃತಿಯ ಸಂಗೀತ ಹರಿಯುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಮಲೆ": "hill",
+      "ಮೌನ": "silence",
+      "ಸಂಗೀತ": "music"
+    },
+    "translation": "In the silence of hills flows the music of nature.",
+    "explanation": "ಪ್ರಕೃತಿಯ ಶಾಂತಿ ಮತ್ತು ಸಂಗೀತದ ಚಿತ್ರಣ.",
+    "explanationEn": "Depicts the peace and music of nature.",
+    "audio": null,
+    "poetBio": "ದ. ರಾ. ಬೇಂದ್ರೆ ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಪ್ರಸಿದ್ಧ ಕವಿ ಮತ್ತು ಜ್ಞಾನಪೀಠ ಪುರಸ್ಕೃತರು."
+  },
+  {
+    "id": "p003",
+    "title": "ಕನ್ನಡ ನುಡಿ",
+    "poet": "ಕುವೆಂಪು",
+    "date": "1948-09-20",
+    "text": "ಕನ್ನಡ ನುಡಿ ನನ್ನ ಉಸಿರು, ನನ್ನ ಬದುಕಿನ ಬೆಳಕು",
+    "lines": [
+      "ಕನ್ನಡ ನುಡಿ ನನ್ನ ಉಸಿರು,",
+      "ನನ್ನ ಬದುಕಿನ ಬೆಳಕು"
+    ],
+    "meanings": {
+      "ನುಡಿ": "language",
+      "ಉಸಿರು": "breath",
+      "ಬೆಳಕು": "light"
+    },
+    "translation": "Kannada language is my breath and the light of my life.",
+    "explanation": "ಕನ್ನಡ ಭಾಷೆಯ ಮೇಲಿನ ಅಪಾರ ಪ್ರೀತಿಯನ್ನು ವ್ಯಕ್ತಪಡಿಸುತ್ತದೆ.",
+    "explanationEn": "Expresses immense love for the Kannada language.",
+    "audio": null,
+    "poetBio": "ಕುವೆಂಪು ಕನ್ನಡ ಸಾಹಿತ್ಯದ ಮಹತ್ವದ ವ್ಯಕ್ತಿತ್ವ."
+  },
+  {
+    "id": "p004",
+    "title": "ಬಡವನ ಹಾಡು",
+    "poet": "ಕುವೆಂಪು",
+    "date": "1938-03-17",
+    "text": "ಬಡವನ ಕಣ್ಣೀರಿನಲ್ಲಿ ಬದುಕಿನ ಸತ್ಯ ಕಾಣುತ್ತದೆ",
+    "lines": [
+      "ಬಡವನ ಕಣ್ಣೀರಿನಲ್ಲಿ",
+      "ಬದುಕಿನ ಸತ್ಯ ಕಾಣುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಬಡವ": "poor man",
+      "ಕಣ್ಣೀರು": "tears",
+      "ಸತ್ಯ": "truth"
+    },
+    "translation": "The truth of life is seen in the tears of the poor.",
+    "explanation": "ಸಾಮಾಜಿಕ ಅಸಮಾನತೆಯ ಭಾವನೆಗಳನ್ನು ಚಿತ್ರಿಸುತ್ತದೆ.",
+    "explanationEn": "Depicts emotions surrounding social inequality.",
+    "audio": null,
+    "poetBio": "ಕುವೆಂಪು ಸಮಾಜಮುಖಿ ಕಾವ್ಯಗಳ ಮೂಲಕ ಪ್ರಸಿದ್ಧರಾಗಿದ್ದಾರೆ."
+  },
+  {
+    "id": "p005",
+    "title": "ವಸಂತ ಗೀತೆ",
+    "poet": "ಕೆ. ಎಸ್. ನರಸಿಂಹಸ್ವಾಮಿ",
+    "date": "1950-04-14",
+    "text": "ವಸಂತದ ಹೂಗಳು ಮನದೊಳಗೆ ಪ್ರೀತಿಯ ಬಣ್ಣ ತುಂಬುತ್ತವೆ",
+    "lines": [
+      "ವಸಂತದ ಹೂಗಳು",
+      "ಮನದೊಳಗೆ ಪ್ರೀತಿಯ ಬಣ್ಣ ತುಂಬುತ್ತವೆ"
+    ],
+    "meanings": {
+      "ವಸಂತ": "spring",
+      "ಹೂ": "flower",
+      "ಪ್ರೀತಿ": "love"
+    },
+    "translation": "Spring flowers fill the heart with colors of love.",
+    "explanation": "ಪ್ರೇಮ ಮತ್ತು ವಸಂತದ ಸೌಂದರ್ಯವನ್ನು ಚಿತ್ರಿಸುತ್ತದೆ.",
+    "explanationEn": "Portrays love and the beauty of spring.",
+    "audio": null,
+    "poetBio": "ಕೆ. ಎಸ್. ನರಸಿಂಹಸ್ವಾಮಿ ಪ್ರೇಮಕಾವ್ಯಗಳಿಗಾಗಿ ಪ್ರಸಿದ್ಧ ಕನ್ನಡ ಕವಿ."
+  },
+  {
+    "id": "p006",
+    "title": "ಜನಪದ ದಾರಿ",
+    "poet": "ಗೋಪಾಲಕೃಷ್ಣ ಅಡಿಗ",
+    "date": "1961-07-08",
+    "text": "ಜನಪದದ ಧ್ವನಿಯಲ್ಲಿ ಮಣ್ಣಿನ ಜೀವ ಸ್ಪಂದಿಸುತ್ತದೆ",
+    "lines": [
+      "ಜನಪದದ ಧ್ವನಿಯಲ್ಲಿ",
+      "ಮಣ್ಣಿನ ಜೀವ ಸ್ಪಂದಿಸುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಜನಪದ": "folk",
+      "ಮಣ್ಣು": "soil",
+      "ಜೀವ": "life"
+    },
+    "translation": "The life of the soil echoes in folk voices.",
+    "explanation": "ಜನಪದ ಸಂಸ್ಕೃತಿಯ ಮಹತ್ವವನ್ನು ತಿಳಿಸುವ ಪದ್ಯ.",
+    "explanationEn": "Highlights the importance of folk culture.",
+    "audio": null,
+    "poetBio": "ಗೋಪಾಲಕೃಷ್ಣ ಅಡಿಗ ನವ್ಯ ಸಾಹಿತ್ಯ ಚಳವಳಿಯ ಪ್ರಮುಖ ಕವಿ."
+  },
+  {
+    "id": "p007",
+    "title": "ಶಾಂತಿಯ ಹಾಡು",
+    "poet": "ಡಿ. ವಿ. ಗುಂಡಪ್ಪ",
+    "date": "1945-12-02",
+    "text": "ಶಾಂತಿಯ ದಾರಿಯಲ್ಲಿ ನಡೆವ ಮನಸ್ಸೇ ನಿಜವಾದ ಸಂಪತ್ತು",
+    "lines": [
+      "ಶಾಂತಿಯ ದಾರಿಯಲ್ಲಿ ನಡೆವ ಮನಸ್ಸೇ",
+      "ನಿಜವಾದ ಸಂಪತ್ತು"
+    ],
+    "meanings": {
+      "ಶಾಂತಿ": "peace",
+      "ಮನಸ್ಸು": "mind",
+      "ಸಂಪತ್ತು": "wealth"
+    },
+    "translation": "A mind walking the path of peace is true wealth.",
+    "explanation": "ಆಂತರಿಕ ಶಾಂತಿಯ ಮಹತ್ವವನ್ನು ವಿವರಿಸುತ್ತದೆ.",
+    "explanationEn": "Explains the importance of inner peace.",
+    "audio": null,
+    "poetBio": "ಡಿ. ವಿ. ಗುಂಡಪ್ಪ ತತ್ವಚಿಂತನೆಯ ಸಾಹಿತ್ಯಕ್ಕಾಗಿ ಪ್ರಸಿದ್ಧರು."
+  },
+  {
+    "id": "p008",
+    "title": "ಹಕ್ಕಿಯ ಹಾರಾಟ",
+    "poet": "ಚನ್ನವೀರ ಕಣವಿ",
+    "date": "1970-08-25",
+    "text": "ಹಕ್ಕಿಯ ಹಾರಾಟದಲ್ಲಿ ಸ್ವಾತಂತ್ರ್ಯದ ಕನಸು ಮಿನುಗುತ್ತದೆ",
+    "lines": [
+      "ಹಕ್ಕಿಯ ಹಾರಾಟದಲ್ಲಿ",
+      "ಸ್ವಾತಂತ್ರ್ಯದ ಕನಸು ಮಿನುಗುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಹಕ್ಕಿ": "bird",
+      "ಸ್ವಾತಂತ್ರ್ಯ": "freedom",
+      "ಕನಸು": "dream"
+    },
+    "translation": "The dream of freedom shines in the bird’s flight.",
+    "explanation": "ಸ್ವಾತಂತ್ರ್ಯ ಮತ್ತು ಆಶೆಯ ಭಾವನೆಯನ್ನು ಚಿತ್ರಿಸುತ್ತದೆ.",
+    "explanationEn": "Depicts the feeling of freedom and hope.",
+    "audio": null,
+    "poetBio": "ಚನ್ನವೀರ ಕಣವಿ ಪ್ರಕೃತಿ ಮತ್ತು ಜೀವನಾಧಾರಿತ ಕಾವ್ಯಗಳಿಗೆ ಪ್ರಸಿದ್ಧರು."
+  },
+  {
+    "id": "p009",
+    "title": "ಮಳೆಯ ರಾಗ",
+    "poet": "ಪು. ತಿ. ನರಸಿಂಹಾಚಾರ",
+    "date": "1958-06-18",
+    "text": "ಮಳೆಯ ರಾಗದಲ್ಲಿ ಭೂಮಿಯ ಸಂತೋಷ ಮೊಳಗುತ್ತದೆ",
+    "lines": [
+      "ಮಳೆಯ ರಾಗದಲ್ಲಿ",
+      "ಭೂಮಿಯ ಸಂತೋಷ ಮೊಳಗುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಮಳೆ": "rain",
+      "ರಾಗ": "melody",
+      "ಭೂಮಿ": "earth"
+    },
+    "translation": "The joy of the earth resounds in the melody of rain.",
+    "explanation": "ಮಳೆಯ ಮೂಲಕ ಪ್ರಕೃತಿಯ ಆನಂದವನ್ನು ಚಿತ್ರಿಸುತ್ತದೆ.",
+    "explanationEn": "Portrays nature’s joy through rain.",
+    "audio": null,
+    "poetBio": "ಪು. ತಿ. ನರಸಿಂಹಾಚಾರ ಕನ್ನಡದ ಖ್ಯಾತ ಕವಿ ಮತ್ತು ಶಿಕ್ಷಕ."
+  },
+  {
+    "id": "p010",
+    "title": "ಹೊಸ ಬೆಳಗು",
+    "poet": "ಸಿದ್ದಲಿಂಗಯ್ಯ",
+    "date": "1985-01-10",
+    "text": "ಹೊಸ ಬೆಳಗು ಸಮಾನತೆಯ ಕನಸನ್ನು ಜಾಗೃತಿಗೊಳಿಸುತ್ತದೆ",
+    "lines": [
+      "ಹೊಸ ಬೆಳಗು",
+      "ಸಮಾನತೆಯ ಕನಸನ್ನು ಜಾಗೃತಿಗೊಳಿಸುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಬೆಳಗು": "dawn",
+      "ಸಮಾನತೆ": "equality",
+      "ಕನಸು": "dream"
+    },
+    "translation": "A new dawn awakens the dream of equality.",
+    "explanation": "ಸಾಮಾಜಿಕ ನ್ಯಾಯ ಮತ್ತು ಸಮಾನತೆಯ ಭಾವನೆಯನ್ನು ಚಿತ್ರಿಸುತ್ತದೆ.",
+    "explanationEn": "Represents social justice and equality.",
+    "audio": null,
+    "poetBio": "ಸಿದ್ದಲಿಂಗಯ್ಯ ದಲಿತ ಸಾಹಿತ್ಯ ಚಳವಳಿಯ ಪ್ರಮುಖ ಕವಿ."
+  },
+  {
+    "id": "p011",
+    "title": "ಬೆಟ್ಟದ ದಾರಿ",
+    "poet": "ರಘು",
+    "date": "1980-01-14",
+    "text": "ಬೆಟ್ಟದ ದಾರಿ ಮೋಡಗಳ ಜೊತೆ ಮಾತಾಡುತ್ತ ಸಾಗುತ್ತದೆ",
+    "lines": ["ಬೆಟ್ಟದ ದಾರಿ ಮೋಡಗಳ ಜೊತೆ ಮಾತಾಡುತ್ತ ಸಾಗುತ್ತದೆ"],
+    "meanings": {
+      "ಬೆಟ್ಟ": "hill",
+      "ದಾರಿ": "path",
+      "ಮೋಡ": "cloud"
+    },
+    "translation": "The mountain path moves along speaking with the clouds.",
+    "explanation": "ಪ್ರಯಾಣ ಮತ್ತು ಪ್ರಕೃತಿಯೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ಚಿತ್ರಿಸುತ್ತದೆ.",
+    "explanationEn": "Depicts travel and connection with nature.",
+    "audio": null,
+    "poetBio": "ಪ್ರವಾಸ ಪ್ರಿಯ ಕವಿ."
+  },
+  {
+    "id": "p012",
+    "title": "ನದಿ ತೀರ",
+    "poet": "ಶಶಿ",
+    "date": "1988-12-03",
+    "text": "ನದಿ ತೀರದ ಮೌನ ಮನಸ್ಸಿಗೆ ಶಾಂತಿಯನ್ನು ನೀಡುತ್ತದೆ",
+    "lines": ["ನದಿ ತೀರದ ಮೌನ ಮನಸ್ಸಿಗೆ ಶಾಂತಿಯನ್ನು ನೀಡುತ್ತದೆ"],
+    "meanings": {
+      "ನದಿ": "river",
+      "ತೀರ": "bank",
+      "ಶಾಂತಿ": "peace"
+    },
+    "translation": "The silence of the riverbank gives peace to the mind.",
+    "explanation": "ನದಿ ತೀರದ ಶಾಂತ ಸ್ವಭಾವವನ್ನು ವರ್ಣಿಸುತ್ತದೆ.",
+    "explanationEn": "Describes the peaceful nature of the riverside.",
+    "audio": null,
+    "poetBio": "ಧ್ಯಾನಮಯ ಕವಿ."
+  },
+  {
+    "id": "p013",
+    "title": "ಹೊಸ ಬೆಳಗು",
+    "poet": "ಸ್ನೇಹ",
+    "date": "1995-05-05",
+    "text": "ಹೊಸ ಬೆಳಗು ಕನಸುಗಳಿಗೆ ಹೊಸ ಬಣ್ಣ ತುಂಬುತ್ತದೆ",
+    "lines": ["ಹೊಸ ಬೆಳಗು ಕನಸುಗಳಿಗೆ ಹೊಸ ಬಣ್ಣ ತುಂಬುತ್ತದೆ"],
+    "meanings": {
+      "ಹೊಸ": "new",
+      "ಬೆಳಗು": "dawn",
+      "ಕನಸು": "dream"
+    },
+    "translation": "A new dawn fills dreams with fresh colors.",
+    "explanation": "ಹೊಸ ದಿನದ ಆಶಾಭಾವವನ್ನು ಚಿತ್ರಿಸುವ ಕವನ.",
+    "explanationEn": "A poem portraying the hope of a new day.",
+    "audio": null,
+    "poetBio": "ಯುವ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p014",
+    "title": "ಮರದ ನೆರಳು",
+    "poet": "ವಿಕಾಸ್",
+    "date": "2001-07-18",
+    "text": "ಮರದ ನೆರಳು ದಣಿದ ಹಾದಿಗಾರನಿಗೆ ವಿಶ್ರಾಂತಿ ನೀಡುತ್ತದೆ",
+    "lines": ["ಮರದ ನೆರಳು ದಣಿದ ಹಾದಿಗಾರನಿಗೆ ವಿಶ್ರಾಂತಿ ನೀಡುತ್ತದೆ"],
+    "meanings": {
+      "ಮರ": "tree",
+      "ನೆರಳು": "shade",
+      "ವಿಶ್ರಾಂತಿ": "rest"
+    },
+    "translation": "The shade of the tree gives rest to the tired traveler.",
+    "explanation": "ಪ್ರಕೃತಿಯ ಆರೈಕೆಯನ್ನು ವರ್ಣಿಸುವ ಪದ್ಯ.",
+    "explanationEn": "A verse describing nature’s comforting care.",
+    "audio": null,
+    "poetBio": "ಸರಳ ಜೀವನದ ಕವಿ."
+  },
+  {
+    "id": "p015",
+    "title": "ಕನಸಿನ ಹಾದಿ",
+    "poet": "ದೀಪಾ",
+    "date": "2010-10-10",
+    "text": "ಕನಸಿನ ಹಾದಿ ಧೈರ್ಯದಿಂದ ನಡೆವವರನ್ನು ಯಶಸ್ಸಿಗೆ ಕರೆದೊಯ್ಯುತ್ತದೆ",
+    "lines": ["ಕನಸಿನ ಹಾದಿ ಧೈರ್ಯದಿಂದ ನಡೆವವರನ್ನು ಯಶಸ್ಸಿಗೆ ಕರೆದೊಯ್ಯುತ್ತದೆ"],
+    "meanings": {
+      "ಕನಸು": "dream",
+      "ಧೈರ್ಯ": "courage",
+      "ಯಶಸ್ಸು": "success"
+    },
+    "translation": "The path of dreams leads the courageous toward success.",
+    "explanation": "ಧೈರ್ಯ ಮತ್ತು ಕನಸುಗಳ ಮಹತ್ವವನ್ನು ತಿಳಿಸುವ ಕವನ.",
+    "explanationEn": "A poem emphasizing courage and dreams.",
+    "audio": null,
+    "poetBio": "ಪ್ರೇರಣಾದಾಯಕ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p016",
+    "title": "ಬೆಳಗಿನ ಹನಿ",
+    "poet": "ಮೋಹನ್",
+    "date": "1952-02-11",
+    "text": "ಬೆಳಗಿನ ಹನಿಗಳು ಹೂವಿನ ಮೇಲೆ ಮುತ್ತಿನಂತೆ ಮಿನುಗುತ್ತವೆ",
+    "lines": ["ಬೆಳಗಿನ ಹನಿಗಳು ಹೂವಿನ ಮೇಲೆ ಮುತ್ತಿನಂತೆ ಮಿನುಗುತ್ತವೆ"],
+    "meanings": {
+      "ಹನಿ": "dew",
+      "ಹೂ": "flower",
+      "ಮುತ್ತು": "pearl"
+    },
+    "translation": "Morning dew sparkles like pearls on flowers.",
+    "explanation": "ಬೆಳಗಿನ ಹನಿಗಳ ಸೌಂದರ್ಯವನ್ನು ವರ್ಣಿಸುವ ಪದ್ಯ.",
+    "explanationEn": "A verse describing the beauty of morning dew.",
+    "audio": null,
+    "poetBio": "ಪ್ರಕೃತಿ ಪ್ರೇಮಿ ಕವಿ."
+  },
+  {
+    "id": "p017",
+    "title": "ಕೋಗಿಲೆಯ ಕೂಗು",
+    "poet": "ಶಿಲ್ಪಾ",
+    "date": "1960-04-08",
+    "text": "ಕೋಗಿಲೆಯ ಕೂಗು ವಸಂತದ ಹರ್ಷವನ್ನು ಹರಡುತ್ತದೆ",
+    "lines": ["ಕೋಗಿಲೆಯ ಕೂಗು ವಸಂತದ ಹರ್ಷವನ್ನು ಹರಡುತ್ತದೆ"],
+    "meanings": {
+      "ಕೋಗಿಲೆ": "cuckoo",
+      "ವಸಂತ": "spring",
+      "ಹರ್ಷ": "joy"
+    },
+    "translation": "The cuckoo's call spreads the joy of spring.",
+    "explanation": "ವಸಂತ ಋತುವಿನ ಸಂತೋಷವನ್ನು ಚಿತ್ರಿಸುವ ಕವನ.",
+    "explanationEn": "A poem portraying the happiness of spring season.",
+    "audio": null,
+    "poetBio": "ಸಂಗೀತಮಯ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p018",
+    "title": "ಕಡಲ ತೀರ",
+    "poet": "ಅನಿಲ್",
+    "date": "1965-09-21",
+    "text": "ಕಡಲ ಅಲೆಗಳು ತೀರದ ಮರಳಿಗೆ ಕಥೆ ಹೇಳುತ್ತವೆ",
+    "lines": ["ಕಡಲ ಅಲೆಗಳು ತೀರದ ಮರಳಿಗೆ ಕಥೆ ಹೇಳುತ್ತವೆ"],
+    "meanings": {
+      "ಕಡಲ": "sea",
+      "ಅಲೆ": "wave",
+      "ಮರಳು": "sand"
+    },
+    "translation": "Sea waves tell stories to the shore’s sand.",
+    "explanation": "ಕಡಲಿನ ನಿತ್ಯ ಚಲನೆಯನ್ನು ವರ್ಣಿಸುತ್ತದೆ.",
+    "explanationEn": "Describes the endless movement of the sea.",
+    "audio": null,
+    "poetBio": "ಸಮುದ್ರ ಪ್ರಿಯ ಕವಿ."
+  },
+  {
+    "id": "p019",
+    "title": "ಚಿಗುರು",
+    "poet": "ಕಿರಣ್",
+    "date": "1971-03-30",
+    "text": "ಹೊಸ ಚಿಗುರು ಮರಕ್ಕೆ ಹೊಸ ಜೀವನ ನೀಡುತ್ತದೆ",
+    "lines": ["ಹೊಸ ಚಿಗುರು ಮರಕ್ಕೆ ಹೊಸ ಜೀವನ ನೀಡುತ್ತದೆ"],
+    "meanings": {
+      "ಚಿಗುರು": "sprout",
+      "ಜೀವನ": "life",
+      "ಮರ": "tree"
+    },
+    "translation": "A new sprout gives fresh life to the tree.",
+    "explanation": "ಹೊಸತನ ಮತ್ತು ಬೆಳವಣಿಗೆಯ ಸಂಕೇತ.",
+    "explanationEn": "A symbol of renewal and growth.",
+    "audio": null,
+    "poetBio": "ಹಸಿರು ಚಿಂತನೆಯ ಕವಿ."
+  },
+  {
+    "id": "p020",
+    "title": "ಮೌನ ರಾತ್ರಿ",
+    "poet": "ರೇಖಾ",
+    "date": "1978-11-19",
+    "text": "ಮೌನ ರಾತ್ರಿ ಮನದ ಮಾತುಗಳನ್ನು ಕೇಳಿಸುತ್ತದೆ",
+    "lines": ["ಮೌನ ರಾತ್ರಿ ಮನದ ಮಾತುಗಳನ್ನು ಕೇಳಿಸುತ್ತದೆ"],
+    "meanings": {
+      "ಮೌನ": "silence",
+      "ರಾತ್ರಿ": "night",
+      "ಮನ": "mind"
+    },
+    "translation": "The silent night lets the heart speak.",
+    "explanation": "ನಿಶ್ಶಬ್ದ ರಾತ್ರಿಯ ಭಾವನಾತ್ಮಕತೆಯನ್ನು ಚಿತ್ರಿಸುತ್ತದೆ.",
+    "explanationEn": "Depicts the emotional depth of a silent night.",
+    "audio": null,
+    "poetBio": "ಭಾವನಾತ್ಮಕ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p021",
+    "title": "ಮೋಡದ ನಾಟ್ಯ",
+    "poet": "ಗಣೇಶ್",
+    "date": "1982-07-02",
+    "text": "ಮೋಡಗಳು ಗಾಳಿಯ ಜೊತೆ ಆಕಾಶದಲ್ಲಿ ನಾಟ್ಯ ಮಾಡುತ್ತವೆ",
+    "lines": ["ಮೋಡಗಳು ಗಾಳಿಯ ಜೊತೆ ಆಕಾಶದಲ್ಲಿ ನಾಟ್ಯ ಮಾಡುತ್ತವೆ"],
+    "meanings": {
+      "ಮೋಡ": "cloud",
+      "ಗಾಳಿ": "wind",
+      "ಆಕಾಶ": "sky"
+    },
+    "translation": "Clouds dance with the wind in the sky.",
+    "explanation": "ಆಕಾಶದ ಚಲನಶೀಲ ಸೌಂದರ್ಯವನ್ನು ವರ್ಣಿಸುತ್ತದೆ.",
+    "explanationEn": "Describes the dynamic beauty of the sky.",
+    "audio": null,
+    "poetBio": "ಪ್ರಕೃತಿ ಚಿತ್ರಿಸುವ ಕವಿ."
+  },
+  {
+    "id": "p022",
+    "title": "ದೀಪದ ಬೆಳಕು",
+    "poet": "ಸುನೀತಾ",
+    "date": "1989-10-14",
+    "text": "ಚಿಕ್ಕ ದೀಪದ ಬೆಳಕು ಕತ್ತಲೆಯನ್ನು ದೂರ ಮಾಡುತ್ತದೆ",
+    "lines": ["ಚಿಕ್ಕ ದೀಪದ ಬೆಳಕು ಕತ್ತಲೆಯನ್ನು ದೂರ ಮಾಡುತ್ತದೆ"],
+    "meanings": {
+      "ದೀಪ": "lamp",
+      "ಬೆಳಕು": "light",
+      "ಕತ್ತಲೆ": "darkness"
+    },
+    "translation": "The light of a small lamp drives away darkness.",
+    "explanation": "ಆಶೆ ಮತ್ತು ಬೆಳಕಿನ ಮಹತ್ವವನ್ನು ತಿಳಿಸುತ್ತದೆ.",
+    "explanationEn": "Conveys the importance of hope and light.",
+    "audio": null,
+    "poetBio": "ಪ್ರೇರಣಾದಾಯಕ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p023",
+    "title": "ಹಾದಿಯ ಕನಸು",
+    "poet": "ರಾಜೀವ್",
+    "date": "1993-06-06",
+    "text": "ದೂರದ ಹಾದಿ ಹೊಸ ಕನಸುಗಳತ್ತ ಕರೆದೊಯ್ಯುತ್ತದೆ",
+    "lines": ["ದೂರದ ಹಾದಿ ಹೊಸ ಕನಸುಗಳತ್ತ ಕರೆದೊಯ್ಯುತ್ತದೆ"],
+    "meanings": {
+      "ಹಾದಿ": "path",
+      "ಕನಸು": "dream",
+      "ದೂರ": "far"
+    },
+    "translation": "The distant path leads toward new dreams.",
+    "explanation": "ಪ್ರಯಾಣ ಮತ್ತು ಗುರಿಯ ಭಾವನೆ.",
+    "explanationEn": "Represents journey and ambition.",
+    "audio": null,
+    "poetBio": "ಯುವ ಕವಿ."
+  },
+  {
+    "id": "p024",
+    "title": "ಹೂವಿನ ತೋಟ",
+    "poet": "ಭಾವನಾ",
+    "date": "1997-08-22",
+    "text": "ಹೂವಿನ ತೋಟ ಬಣ್ಣಗಳಿಂದ ಮನಸ್ಸು ಹರ್ಷಗೊಳಿಸುತ್ತದೆ",
+    "lines": ["ಹೂವಿನ ತೋಟ ಬಣ್ಣಗಳಿಂದ ಮನಸ್ಸು ಹರ್ಷಗೊಳಿಸುತ್ತದೆ"],
+    "meanings": {
+      "ತೋಟ": "garden",
+      "ಬಣ್ಣ": "color",
+      "ಹರ್ಷ": "joy"
+    },
+    "translation": "A flower garden delights the mind with colors.",
+    "explanation": "ಹೂಗಳ ಬಣ್ಣಗಳ ಸೌಂದರ್ಯವನ್ನು ವರ್ಣಿಸುತ್ತದೆ.",
+    "explanationEn": "Describes the beauty of colorful flowers.",
+    "audio": null,
+    "poetBio": "ಹೂ ಪ್ರಿಯ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p025",
+    "title": "ನಕ್ಷತ್ರ ದಾರಿ",
+    "poet": "ಪ್ರಕಾಶ್",
+    "date": "2000-12-01",
+    "text": "ನಕ್ಷತ್ರಗಳ ದಾರಿ ರಾತ್ರಿಯ ಕನಸುಗಳನ್ನು ಬೆಳಗುತ್ತದೆ",
+    "lines": ["ನಕ್ಷತ್ರಗಳ ದಾರಿ ರಾತ್ರಿಯ ಕನಸುಗಳನ್ನು ಬೆಳಗುತ್ತದೆ"],
+    "meanings": {
+      "ನಕ್ಷತ್ರ": "star",
+      "ರಾತ್ರಿ": "night",
+      "ಕನಸು": "dream"
+    },
+    "translation": "The path of stars lights the dreams of the night.",
+    "explanation": "ನಕ್ಷತ್ರಗಳ ಮಿನುಗು ಮತ್ತು ಕನಸುಗಳ ಸಂಬಂಧ.",
+    "explanationEn": "Shows the connection between stars and dreams.",
+    "audio": null,
+    "poetBio": "ಆಕಾಶ ಪ್ರಿಯ ಕವಿ."
+  },
+  {
+    "id": "p026",
+    "title": "ಮಣ್ಣಿನ ವಾಸನೆ",
+    "poet": "ತನುಜಾ",
+    "date": "2003-05-17",
+    "text": "ಮಣ್ಣಿನ ವಾಸನೆ ಮಳೆಯ ನೆನಪುಗಳನ್ನು ತರುತ್ತದೆ",
+    "lines": ["ಮಣ್ಣಿನ ವಾಸನೆ ಮಳೆಯ ನೆನಪುಗಳನ್ನು ತರುತ್ತದೆ"],
+    "meanings": {
+      "ಮಣ್ಣು": "soil",
+      "ವಾಸನೆ": "smell",
+      "ಮಳೆ": "rain"
+    },
+    "translation": "The smell of soil brings memories of rain.",
+    "explanation": "ಮಣ್ಣಿನ ಪರಿಮಳ ಮತ್ತು ನೆನಪುಗಳ ಚಿತ್ರಣ.",
+    "explanationEn": "Depicts the fragrance of earth and memories.",
+    "audio": null,
+    "poetBio": "ಗ್ರಾಮೀಣ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p027",
+    "title": "ಹಸಿರು ದಾರಿ",
+    "poet": "ನವೀನ್",
+    "date": "2006-09-09",
+    "text": "ಹಸಿರು ದಾರಿ ಪ್ರಕೃತಿಯ ಮಡಿಲಿಗೆ ಕರೆದೊಯ್ಯುತ್ತದೆ",
+    "lines": ["ಹಸಿರು ದಾರಿ ಪ್ರಕೃತಿಯ ಮಡಿಲಿಗೆ ಕರೆದೊಯ್ಯುತ್ತದೆ"],
+    "meanings": {
+      "ಹಸಿರು": "green",
+      "ದಾರಿ": "path",
+      "ಪ್ರಕೃತಿ": "nature"
+    },
+    "translation": "The green path leads into the lap of nature.",
+    "explanation": "ಪ್ರಕೃತಿಯೊಂದಿಗೆ ಒಡನಾಟವನ್ನು ವರ್ಣಿಸುತ್ತದೆ.",
+    "explanationEn": "Describes closeness with nature.",
+    "audio": null,
+    "poetBio": "ಪ್ರಕೃತಿ ಕವಿ."
+  },
+  {
+    "id": "p028",
+    "title": "ಕನಸಿನ ಚಂದ್ರ",
+    "poet": "ಲತಾ",
+    "date": "2012-02-20",
+    "text": "ಕನಸಿನ ಚಂದ್ರ ಮೌನ ರಾತ್ರಿಗೆ ಮಧುರತೆ ನೀಡುತ್ತದೆ",
+    "lines": ["ಕನಸಿನ ಚಂದ್ರ ಮೌನ ರಾತ್ರಿಗೆ ಮಧುರತೆ ನೀಡುತ್ತದೆ"],
+    "meanings": {
+      "ಚಂದ್ರ": "moon",
+      "ಮಧುರತೆ": "sweetness",
+      "ಮೌನ": "silence"
+    },
+    "translation": "The dreamlike moon adds sweetness to the silent night.",
+    "explanation": "ಚಂದ್ರನ ಮಧುರತೆಯನ್ನು ವರ್ಣಿಸುವ ಪದ್ಯ.",
+    "explanationEn": "A verse describing the sweetness of moonlight.",
+    "audio": null,
+    "poetBio": "ರಾತ್ರಿಯ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p029",
+    "title": "ಹಾದಿಯ ಬೆಳಕು",
+    "poet": "ವರುಣ್",
+    "date": "2015-04-04",
+    "text": "ಸಣ್ಣ ಬೆಳಕು ಕೂಡ ಹಾದಿಯನ್ನು ಸ್ಪಷ್ಟಗೊಳಿಸುತ್ತದೆ",
+    "lines": ["ಸಣ್ಣ ಬೆಳಕು ಕೂಡ ಹಾದಿಯನ್ನು ಸ್ಪಷ್ಟಗೊಳಿಸುತ್ತದೆ"],
+    "meanings": {
+      "ಬೆಳಕು": "light",
+      "ಹಾದಿ": "path",
+      "ಸ್ಪಷ್ಟ": "clear"
+    },
+    "translation": "Even a small light makes the path clear.",
+    "explanation": "ಸಣ್ಣ ಪ್ರಯತ್ನಗಳ ಮಹತ್ವವನ್ನು ತಿಳಿಸುತ್ತದೆ.",
+    "explanationEn": "Conveys the value of small efforts.",
+    "audio": null,
+    "poetBio": "ಪ್ರೇರಣಾತ್ಮಕ ಕವಿ."
+  },
+  {
+    "id": "p030",
+    "title": "ಸೂರ್ಯೋದಯ",
+    "poet": "ಹರಿಣಿ",
+    "date": "2018-01-01",
+    "text": "ಸೂರ್ಯೋದಯ ಹೊಸ ಆಶೆಯನ್ನು ಲೋಕಕ್ಕೆ ತರುತ್ತದೆ",
+    "lines": ["ಸೂರ್ಯೋದಯ ಹೊಸ ಆಶೆಯನ್ನು ಲೋಕಕ್ಕೆ ತರುತ್ತದೆ"],
+    "meanings": {
+      "ಸೂರ್ಯೋದಯ": "sunrise",
+      "ಆಶೆ": "hope",
+      "ಲೋಕ": "world"
+    },
+    "translation": "Sunrise brings new hope to the world.",
+    "explanation": "ಹೊಸ ಆರಂಭ ಮತ್ತು ಆಶಾಭಾವದ ಚಿತ್ರಣ.",
+    "explanationEn": "Represents a new beginning and hope.",
+    "audio": null,
+    "poetBio": "ಆಶಾವಾದಿ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p031",
+    "title": "ಮಳೆ ಹನಿ",
+    "poet": "ಚೇತನ",
+    "date": "1950-06-15",
+    "text": "ಮಳೆ ಹನಿಗಳು ಮಣ್ಣಿನ ಮೇಲೆ ನೃತ್ಯ ಮಾಡಿ ಸುಗಂಧ ಹರಡುತ್ತವೆ",
+    "lines": ["ಮಳೆ ಹನಿಗಳು ಮಣ್ಣಿನ ಮೇಲೆ ನೃತ್ಯ ಮಾಡಿ ಸುಗಂಧ ಹರಡುತ್ತವೆ"],
+    "meanings": {
+      "ಮಳೆ": "rain",
+      "ಹನಿ": "drop",
+      "ಮಣ್ಣು": "soil"
+    },
+    "translation": "Raindrops dance on the soil spreading fragrance.",
+    "explanation": "ಮಳೆಯ ಸೌಂದರ್ಯ ಮತ್ತು ಮಣ್ಣಿನ ಪರಿಮಳವನ್ನು ಚಿತ್ರಿಸುವ ಪದ್ಯ.",
+    "explanationEn": "A verse describing the beauty of rain and the fragrance of wet earth.",
+    "audio": null,
+    "poetBio": "ಪ್ರಕೃತಿ ಪ್ರಿಯ ಕವಿ."
+  },
+  {
+    "id": "p032",
+    "title": "ಸಂಜೆಯ ನೆರಳು",
+    "poet": "ವಿದ್ಯಾ",
+    "date": "1955-09-12",
+    "text": "ಸಂಜೆಯ ನೆರಳು ಹಳ್ಳಿಯ ದಾರಿಯಲ್ಲಿ ಮೃದುವಾಗಿ ಹರಡುತ್ತದೆ",
+    "lines": ["ಸಂಜೆಯ ನೆರಳು ಹಳ್ಳಿಯ ದಾರಿಯಲ್ಲಿ ಮೃದುವಾಗಿ ಹರಡುತ್ತದೆ"],
+    "meanings": {
+      "ಸಂಜೆ": "evening",
+      "ನೆರಳು": "shadow",
+      "ಹಳ್ಳಿ": "village"
+    },
+    "translation": "Evening shadows spread softly across the village path.",
+    "explanation": "ಸಂಜೆಯ ಶಾಂತ ವಾತಾವರಣವನ್ನು ವರ್ಣಿಸುವ ಕವನ.",
+    "explanationEn": "A poem portraying the peaceful atmosphere of evening.",
+    "audio": null,
+    "poetBio": "ಗ್ರಾಮೀಣ ಜೀವನವನ್ನು ಪ್ರೀತಿಸುವ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p033",
+    "title": "ಚಂದ್ರ ಕಿರಣ",
+    "poet": "ಆದಿತ್ಯ",
+    "date": "1962-03-19",
+    "text": "ಚಂದ್ರನ ಕಿರಣಗಳು ಕೆರೆಯ ನೀರಿನಲ್ಲಿ ಬೆಳ್ಳಿ ಹಾದಿ ಬಿಡುತ್ತವೆ",
+    "lines": ["ಚಂದ್ರನ ಕಿರಣಗಳು ಕೆರೆಯ ನೀರಿನಲ್ಲಿ ಬೆಳ್ಳಿ ಹಾದಿ ಬಿಡುತ್ತವೆ"],
+    "meanings": {
+      "ಚಂದ್ರ": "moon",
+      "ಕಿರಣ": "ray",
+      "ಕೆರೆಯ": "lake"
+    },
+    "translation": "Moonlight leaves a silver trail upon the lake.",
+    "explanation": "ಚಂದ್ರನ ಬೆಳಕಿನ ಮಧುರತೆಯನ್ನು ಚಿತ್ರಿಸುವ ಕವನ.",
+    "explanationEn": "A poem capturing the sweetness of moonlight.",
+    "audio": null,
+    "poetBio": "ಪ್ರಕೃತಿ ಕಾವ್ಯದ ರಚಯಿತ."
+  },
+  {
+    "id": "p034",
+    "title": "ಹಕ್ಕಿಯ ಹಾಡು",
+    "poet": "ನೀಲಾ",
+    "date": "1968-08-01",
+    "text": "ಹಕ್ಕಿಯ ಹಾಡು ಬೆಳಗಿನ ಗಾಳಿಯಲ್ಲಿ ಸಂತೋಷ ತುಂಬುತ್ತದೆ",
+    "lines": ["ಹಕ್ಕಿಯ ಹಾಡು ಬೆಳಗಿನ ಗಾಳಿಯಲ್ಲಿ ಸಂತೋಷ ತುಂಬುತ್ತದೆ"],
+    "meanings": {
+      "ಹಕ್ಕಿ": "bird",
+      "ಹಾಡು": "song",
+      "ಸಂತೋಷ": "happiness"
+    },
+    "translation": "The bird's song fills the morning breeze with joy.",
+    "explanation": "ಪ್ರಕೃತಿಯ ಸಂಗೀತವನ್ನು ವರ್ಣಿಸುವ ಪದ್ಯ.",
+    "explanationEn": "A verse describing the music of nature.",
+    "audio": null,
+    "poetBio": "ಪಕ್ಷಿ ಪ್ರಿಯ ಕವಿ."
+  },
+  {
+    "id": "p035",
+    "title": "ಹೂವಿನ ಸುಗಂಧ",
+    "poet": "ಕಾವೇರಿ",
+    "date": "1972-04-27",
+    "text": "ಹೂವಿನ ಸುಗಂಧ ಮನದೊಳಗೆ ನೆನಪುಗಳನ್ನು ಮೂಡಿಸುತ್ತದೆ",
+    "lines": ["ಹೂವಿನ ಸುಗಂಧ ಮನದೊಳಗೆ ನೆನಪುಗಳನ್ನು ಮೂಡಿಸುತ್ತದೆ"],
+    "meanings": {
+      "ಹೂ": "flower",
+      "ಸುಗಂಧ": "fragrance",
+      "ನೆನಪು": "memory"
+    },
+    "translation": "The fragrance of flowers awakens memories within the heart.",
+    "explanation": "ಹೂವಿನ ಪರಿಮಳ ಮತ್ತು ನೆನಪುಗಳ ನಡುವಿನ ಸಂಬಂಧವನ್ನು ವಿವರಿಸುತ್ತದೆ.",
+    "explanationEn": "Explains the connection between floral fragrance and memories.",
+    "audio": null,
+    "poetBio": "ಭಾವನಾತ್ಮಕ ಕವಯಿತ್ರಿ."
+  },
+  {
+    "id": "p036",
     "title": "ಕಿರಣಗಳು",
     "poet": "ಅಹಣೀಯ ಕವಿಭಾಗ",
     "date": "1900-01-01",
     "text": "ಬೆಳಗಿನ ಕಿರಣಗಳು ಮೃದು ಮುತ್ತುಗಳಿಂದ ಜೀವ ತುಂಬಿಸುತವೆ",
-    "lines": ["ಬೆಳಗಿನ ಕಿರಣಗಳು ಮೃದು ಮುತ್ತುಗಳಿಂದ ಜೀವ ತುಂಬಿಸುತವೆ"],
-    "meanings": {"ಕಿರಣಗಳು": "rays", "ಬೆಳಗಿನ": "morning", "ಮುತ್ತು": "pearl"},
+    "lines": [
+      "ಬೆಳಗಿನ ಕಿರಣಗಳು ಮೃದು ಮುತ್ತುಗಳಿಂದ ಜೀವ ತುಂಬಿಸುತವೆ"
+    ],
+    "meanings": {
+      "ಕಿರಣಗಳು": "rays",
+      "ಬೆಳಗಿನ": "morning",
+      "ಮುತ್ತು": "pearl"
+    },
     "translation": "Morning rays fill life with soft pearls.",
     "explanation": "ಬೆಳಿಗ್ಗೆಯ ಬೆಳಕಿನ ಸೌಂದರ್ಯ ಮತ್ತು ಹೊಸ ದಿನದ ಪ್ರಾರಂಭದ ಭಾವನೆ.",
     "explanationEn": "Describes the beauty of morning light and the feeling of a fresh new day.",
     "audio": null,
-    "poetBio": "ಕಲ್ಪನಾತ್ಮಕ ಕವಿ - ಸಾರ್ವಜನಿಕ ಉದಾಹರಣೆಗೆ ಬಳಸकೊಳ್ಳಲಾಗಿದೆ."
+    "poetBio": "ಕಲ್ಪನಾತ್ಮಕ ಕವಿ - ಸಾರ್ವಜನಿಕ ಉದಾಹರಣೆಗೆ ಬಳಸಿಕೊಳ್ಳಲಾಗಿದೆ."
   },
   {
-    "id": "p002",
+    "id": "p037",
     "title": "ಮೃದು ಗಾಳಿ",
     "poet": "ನದೀಷ",
     "date": "1910-05-10",
     "text": "ಮೃದು ಗಾಳಿ ಮರಗಳ ನಡುವೆ ಹಾಡು ಹಾಡುತ್ತದೆ",
-    "lines": ["ಮೃದು ಗಾಳಿ ಮರಗಳ ನಡುವೆ ಹಾಡು ಹಾಡುತ್ತದೆ"],
-    "meanings": {"ಮೃದು": "gentle", "ಗಾಳಿ": "wind"},
+    "lines": [
+      "ಮೃದು ಗಾಳಿ ಮರಗಳ ನಡುವೆ ಹಾಡು ಹಾಡುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಮೃದು": "gentle",
+      "ಗಾಳಿ": "wind"
+    },
     "translation": "A gentle breeze sings among the trees.",
     "explanation": "ಸ್ವಭಾವಿಕ ಶಾಂತಿಯನ್ನು ವರ್ಣಿಸುವ ಸರಳ ಪದ್ಯ.",
     "explanationEn": "A simple verse depicting natural calm and peacefulness.",
@@ -28,13 +699,18 @@
     "poetBio": "ಗ್ರಾಮೀಯ ಕವಿ."
   },
   {
-    "id": "p003",
+    "id": "p038",
     "title": "ರಾತ್ರಿ ಜಡಿಲೆ",
     "poet": "ಸುಧಾ",
     "date": "1920-10-01",
     "text": "ತಾರೆಗಳ ಬೆಳಕು ನದಿಯ ಮೇಲೆ ಪ್ರತಿಬಿಂಬವಾಗಿ ಅಮೃತವನ್ನು ಹಂಚುತ್ತದೆ",
-    "lines": ["ತारेಗಳ ಬೆಳಕು ನದಿಯ ಮೇಲೆ ಪ್ರತಿಬಿಂಬವಾಗಿ ಅಮೃತವನ್ನು ಹಂಚುತ್ತದೆ"],
-    "meanings": {"ತಾರೆ": "star", "ನದಿ": "river"},
+    "lines": [
+      "ತಾರೆಗಳ ಬೆಳಕು ನದಿಯ ಮೇಲೆ ಪ್ರತಿಬಿಂಬವಾಗಿ ಅಮೃತವನ್ನು ಹಂಚುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ತಾರೆ": "star",
+      "ನದಿ": "river"
+    },
     "translation": "Starlight reflects on the river, sharing a heavenly glow.",
     "explanation": "ರಾತ್ರಿಯಲ್ಲಿನ ಪ್ರಕಾಶ ಮತ್ತು ಶಾಂತಿಯ ವಾಕ್ಯ.",
     "explanationEn": "An image of night light and tranquility reflected on the river.",
@@ -42,13 +718,18 @@
     "poetBio": "ನಗರದ ಕವಿ."
   },
   {
-    "id": "p004",
+    "id": "p039",
     "title": "ಹಸಿರು ಹೊಳೆ",
     "poet": "ಮಣಿ",
     "date": "1930-07-21",
     "text": "ಹಸಿರುವ ಹೊಳೆ ತುಂಬಿ ಹರಿದು ಹೋಗುತ್ತದೆ",
-    "lines": ["ಹಸಿರುವ ಹೊಳೆ ತುಂಬಿ ಹರಿದು ಹೋಗುತ್ತದೆ"],
-    "meanings": {"ಹಸಿರು": "green", "ಹೊಳೆ": "stream"},
+    "lines": [
+      "ಹಸಿರುವ ಹೊಳೆ ತುಂಬಿ ಹರಿದು ಹೋಗುತ್ತದೆ"
+    ],
+    "meanings": {
+      "ಹಸಿರು": "green",
+      "ಹೊಳೆ": "stream"
+    },
     "translation": "The green stream overflows and flows away.",
     "explanation": "ಪ್ರಕೃತಿಯ ಪ್ರವಾಹ ಮತ್ತು ಹೊಸತನದ ಚಿತ್ರಣ.",
     "explanationEn": "A depiction of nature's flow and a sense of renewal.",
@@ -56,13 +737,18 @@
     "poetBio": "ಹರಿತ ಚಿಂತನೆಯ ಕವಿ."
   },
   {
-    "id": "p005",
+    "id": "p040",
     "title": "ಮನದ ಮಾತು",
     "poet": "ಲೀನಾ",
     "date": "1940-11-11",
     "text": "ಮನದ ಪಾಳುಗಳು ಮೌನದಿಂದ ತುಡಿವನ್ನು ಹೇಳುತ್ತವೆ",
-    "lines": ["ಮನದ ಪಾಳುಗಳು ಮೌನದಿಂದ ತುಡಿವನ್ನು ಹೇಳುತ್ತವೆ"],
-    "meanings": {"ಮನ": "mind", "ಮೌನ": "silence"},
+    "lines": [
+      "ಮನದ ಪಾಳುಗಳು ಮೌನದಿಂದ ತುಡಿವನ್ನು ಹೇಳುತ್ತವೆ"
+    ],
+    "meanings": {
+      "ಮನ": "mind",
+      "ಮೌನ": "silence"
+    },
     "translation": "The folds of the mind silently speak their truths.",
     "explanation": "ಆಂತರಿಕ ಭಾವನೆಗಳ ನಿಶ್ಚಲ ವೀಕ್ಷಣೆ.",
     "explanationEn": "A calm observation of inner feelings and emotions.",
