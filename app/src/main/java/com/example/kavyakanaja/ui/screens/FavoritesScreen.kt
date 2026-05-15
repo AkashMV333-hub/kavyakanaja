@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.kavyakanaja.data.FavoritesManager
 import com.example.kavyakanaja.data.Repository
+import androidx.compose.material3.Surface
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -38,16 +39,46 @@ fun FavoritesScreen(navController: NavController) {
     val favs by FavoritesManager.favoritesFlow(context).collectAsState(initial = emptySet())
     val favPoems = poems.filter { favs.contains(it.id) }
 
-    Column(modifier = Modifier.fillMaxSize()) {
-        CenterAlignedTopAppBar(title = { Text("Favorites") }, colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = MaterialTheme.colorScheme.background))
-        Spacer(modifier = Modifier.height(8.dp))
-        LazyColumn(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-            items(favPoems) { poem ->
-                Card(modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(vertical = 6.dp)
-                    .clickable { navController.navigate("poem/${Uri.encode(poem.id)}") }, shape = MaterialTheme.shapes.small, elevation = CardDefaults.cardElevation(4.dp)) {
-                    Text(text = poem.title, modifier = Modifier.padding(16.dp), style = MaterialTheme.typography.bodyLarge)
+    Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            CenterAlignedTopAppBar(title = { Text("Favorites") }, colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = MaterialTheme.colorScheme.background))
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Column(modifier = Modifier.padding(horizontal = 16.dp)) {
+                SectionHeader(
+                    title = "Your saved poems",
+                    subtitle = "Revisit the verses you marked as favorites."
+                )
+
+                if (favPoems.isEmpty()) {
+                    EmptyStateCard(
+                        title = "No favorites yet",
+                        subtitle = "Tap the Favorite button inside any poem to keep it here."
+                    )
+                } else {
+                    LazyColumn(modifier = Modifier.fillMaxSize()) {
+                        items(favPoems) { poem ->
+                            Card(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 6.dp)
+                                    .clickable { navController.navigate("poem/${Uri.encode(poem.id)}") },
+                                shape = MaterialTheme.shapes.large,
+                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                                elevation = CardDefaults.cardElevation(defaultElevation = 3.dp)
+                            ) {
+                                Column(modifier = Modifier.padding(16.dp)) {
+                                    Text(text = poem.title, style = MaterialTheme.typography.titleMedium)
+                                    Text(
+                                        text = poem.poet,
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        modifier = Modifier.padding(top = 4.dp)
+                                    )
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

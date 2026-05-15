@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.ui.Alignment
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.ClickableText
@@ -39,6 +40,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Tab
+import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.buildAnnotatedString
@@ -46,7 +48,6 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.graphics.Color as UiColor
-import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -87,6 +88,8 @@ fun HomeScreen(navController: NavController) {
     }
 
     val tts = remember { TtsHelper(context) }
+    val verseTextColor = MaterialTheme.colorScheme.onSurface
+    val meaningHighlightColor = if (isSystemInDarkTheme()) MaterialTheme.colorScheme.primary else UiColor(0xFF2E7D32)
 
     DisposableEffect(Unit) {
         onDispose {
@@ -129,6 +132,28 @@ fun HomeScreen(navController: NavController) {
 
             Column(modifier = Modifier.padding(16.dp)) {
 
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                    elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+                ) {
+                    Column(modifier = Modifier.padding(18.dp)) {
+                        Text(
+                            text = "Today’s verse",
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                        Text(
+                            text = "A calm reading space for Kannada poetry with meanings, translation, and explanation.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier.padding(top = 4.dp)
+                        )
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -163,11 +188,12 @@ fun HomeScreen(navController: NavController) {
                                     "poem/${Uri.encode(poem.id)}"
                                 )
                             },
-                        elevation = CardDefaults.cardElevation(6.dp),
-                        shape = MaterialTheme.shapes.medium
+                        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                        shape = MaterialTheme.shapes.extraLarge
                     ) {
 
-                        Column(modifier = Modifier.padding(20.dp)) {
+                        Column(modifier = Modifier.padding(22.dp)) {
 
                             Text(
                                 text = poem.title,
@@ -200,7 +226,7 @@ fun HomeScreen(navController: NavController) {
 
                                         addStyle(
                                             style = SpanStyle(
-                                                color = UiColor(0xFF2E7D32)
+                                                color = meaningHighlightColor
                                             ),
                                             start = start,
                                             end = end
@@ -244,7 +270,7 @@ fun HomeScreen(navController: NavController) {
                                         showDialog.value = true
                                     }
                                 },
-                                style = MaterialTheme.typography.bodyLarge,
+                                style = MaterialTheme.typography.bodyLarge.copy(color = verseTextColor),
                                 modifier = Modifier.padding(top = 12.dp)
                             )
 
@@ -278,47 +304,63 @@ fun HomeScreen(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(12.dp))
 
-                    // Translation / explanation navbar placed outside the card, below it
-                    val cardTabs = listOf("Translation", "Explanation")
-                    TabRow(selectedTabIndex = cardTabIndex) {
-                        cardTabs.forEachIndexed { idx, t ->
-                            Tab(
-                                selected = cardTabIndex == idx,
-                                onClick = { cardTabIndex = idx }
-                            ) {
-                                Text(
-                                    t,
-                                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 6.dp),
-                                    style = MaterialTheme.typography.bodySmall
-                                )
-                            }
-                        }
-                    }
-
-                    when (cardTabIndex) {
-                        0 -> {
-                            poem.translation?.let { trans ->
-                                val preview = if (trans.length > 120) trans.take(120) + "…" else trans
-                                Text(
-                                    text = preview,
-                                    style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.onSurface,
-                                    modifier = Modifier.padding(top = 8.dp)
-                                )
-                            } ?: Text(
-                                "Translation not available",
-                                style = MaterialTheme.typography.bodySmall,
-                                modifier = Modifier.padding(top = 8.dp)
-                            )
-                        }
-
-                        1 -> {
-                            val expl = poem.explanationEn ?: poem.explanation
+                    Card(
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+                        shape = MaterialTheme.shapes.large
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp)) {
                             Text(
-                                text = expl ?: "Explanation not available",
-                                style = MaterialTheme.typography.bodySmall,
-                                modifier = Modifier.padding(top = 8.dp)
+                                text = "Learn more",
+                                style = MaterialTheme.typography.titleSmall,
+                                color = MaterialTheme.colorScheme.primary
                             )
+
+                            Spacer(modifier = Modifier.height(10.dp))
+
+                            val cardTabs = listOf("Translation", "Explanation")
+                            TabRow(selectedTabIndex = cardTabIndex) {
+                                cardTabs.forEachIndexed { idx, t ->
+                                    Tab(
+                                        selected = cardTabIndex == idx,
+                                        onClick = { cardTabIndex = idx }
+                                    ) {
+                                        Text(
+                                            t,
+                                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 6.dp),
+                                            style = MaterialTheme.typography.bodySmall
+                                        )
+                                    }
+                                }
+                            }
+
+                            when (cardTabIndex) {
+                                0 -> {
+                                    poem.translation?.let { trans ->
+                                        val preview = if (trans.length > 120) trans.take(120) + "…" else trans
+                                        Text(
+                                            text = preview,
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurface,
+                                            modifier = Modifier.padding(top = 12.dp)
+                                        )
+                                    } ?: Text(
+                                        "Translation not available",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        modifier = Modifier.padding(top = 12.dp)
+                                    )
+                                }
+
+                                1 -> {
+                                    val expl = poem.explanationEn ?: poem.explanation
+                                    Text(
+                                        text = expl ?: "Explanation not available",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        modifier = Modifier.padding(top = 12.dp)
+                                    )
+                                }
+                            }
                         }
                     }
 

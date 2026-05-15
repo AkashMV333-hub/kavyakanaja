@@ -1,6 +1,5 @@
 package com.example.kavyakanaja.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -12,13 +11,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = AccentSaffron,
-    secondary = Muted,
-    tertiary = AccentSaffron,
-    background = CreamBackground,
-    surface = SurfaceAlt,
-    onBackground = TextPrimary,
-    onSurface = TextPrimary
+    primary = DarkAccent,
+    secondary = DarkMuted,
+    tertiary = DarkAccent,
+    background = DarkBackground,
+    surface = DarkSurface,
+    surfaceVariant = DarkSurfaceAlt,
+    onBackground = DarkTextPrimary,
+    onSurface = DarkTextPrimary,
+    onSurfaceVariant = DarkTextSecondary,
+    onPrimary = DarkBackground,
+    onSecondary = DarkBackground,
+    outline = DarkMuted
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -27,15 +31,20 @@ private val LightColorScheme = lightColorScheme(
     tertiary = AccentSaffron,
     background = CreamBackground,
     surface = SurfaceAlt,
+    surfaceVariant = CreamBackground,
     onBackground = TextPrimary,
-    onSurface = TextPrimary
+    onSurface = TextPrimary,
+    onSurfaceVariant = Muted,
+    onPrimary = CreamBackground,
+    onSecondary = CreamBackground,
+    outline = Muted
 )
 
 @Composable
 fun KavyaKanajaTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

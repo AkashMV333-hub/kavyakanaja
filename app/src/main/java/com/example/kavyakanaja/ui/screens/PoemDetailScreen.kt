@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
@@ -54,6 +55,8 @@ fun PoemDetailScreen(navController: NavController, poemId: String?) {
     val poems = remember { mutableStateOf(repo.loadPoems()) }
     val poem = poems.value.firstOrNull { it.id == poemId }
     val tts = remember { TtsHelper(context) }
+    val verseTextColor = MaterialTheme.colorScheme.onSurface
+    val meaningHighlightColor = if (isSystemInDarkTheme()) MaterialTheme.colorScheme.primary else UiColor(0xFF2E7D32)
 
     DisposableEffect(Unit) { onDispose { tts.shutdown() } }
 
@@ -91,39 +94,60 @@ fun PoemDetailScreen(navController: NavController, poemId: String?) {
                 modifier = Modifier.padding(bottom = 8.dp)
             )
 
-            val annotated = buildAnnotatedString {
-                val words = poem.text.split(Regex("\\s+"))
-                words.forEachIndexed { idx, token ->
-                    val clean = token.trim().trim(',', '.', '!', '?', '"', '“', '”')
-                    val start = length
-                    append(token)
-                    val end = length
-                    if (poem.meanings.containsKey(clean)) {
-                        addStringAnnotation(
-                            tag = "MEANING",
-                            annotation = clean,
-                            start = start,
-                            end = end
-                        )
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                elevation = androidx.compose.material3.CardDefaults.cardElevation(defaultElevation = 2.dp),
+                colors = androidx.compose.material3.CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                shape = MaterialTheme.shapes.large
+            ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text(
+                        text = "Verse",
+                        style = MaterialTheme.typography.titleSmall,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+
+                    Spacer(modifier = Modifier.height(10.dp))
+
+                    val annotated = buildAnnotatedString {
+                        val words = poem.text.split(Regex("\\s+"))
+                        words.forEachIndexed { idx, token ->
+                            val clean = token.trim().trim(',', '.', '!', '?', '"', '“', '”')
+                            val start = length
+                            append(token)
+                            val end = length
+                            if (poem.meanings.containsKey(clean)) {
+                                addStringAnnotation(
+                                    tag = "MEANING",
+                                    annotation = clean,
+                                    start = start,
+                                    end = end
+                                )
+                                addStyle(
+                                    style = androidx.compose.ui.text.SpanStyle(color = meaningHighlightColor),
+                                    start = start,
+                                    end = end
+                                )
+                            }
+                            if (idx != words.lastIndex) append(" ")
+                        }
                     }
-                    if (idx != words.lastIndex) append(" ")
+
+                    ClickableText(text = annotated, onClick = { offset ->
+                        val list =
+                            annotated.getStringAnnotations(tag = "MEANING", start = offset, end = offset)
+                        if (list.isNotEmpty()) {
+                            val ann = list.first()
+                            val wordStr = ann.item.toString()
+                            val meaning = poem.meanings[wordStr]
+                            selectedWord.value = wordStr to meaning?.toString()
+                            showDialog.value = true
+                        }
+                    }, modifier = Modifier.padding(vertical = 8.dp), style = MaterialTheme.typography.bodyLarge.copy(color = verseTextColor))
                 }
             }
 
-            ClickableText(text = annotated, onClick = { offset ->
-                val list =
-                    annotated.getStringAnnotations(tag = "MEANING", start = offset, end = offset)
-                if (list.isNotEmpty()) {
-                    val ann = list.first()
-                    // ensure the annotation item is treated as String
-                    val wordStr = ann.item.toString()
-                    val meaning = poem.meanings[wordStr]
-                    selectedWord.value = wordStr to meaning?.toString()
-                    showDialog.value = true
-                }
-            }, modifier = Modifier.padding(vertical = 8.dp))
-
-            Row(modifier = Modifier.fillMaxWidth()) {
+            Row(modifier = Modifier.fillMaxWidth().padding(top = 12.dp)) {
                 Button(onClick = { tts.speak(poem.text) }) { Text("Play (TTS)") }
 
                 Button(onClick = {
@@ -136,32 +160,49 @@ fun PoemDetailScreen(navController: NavController, poemId: String?) {
                 }
             }
 
-            // Tab row for Translation / Explanation
-            val tabs = listOf("Translation", "Explanation")
-            TabRow(selectedTabIndex = selectedTab) {
-                tabs.forEachIndexed { index, title ->
-                    Tab(selected = selectedTab == index, onClick = { selectedTab = index }) {
-                        Text(title, modifier = Modifier.padding(12.dp))
-                    }
-                }
-            }
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 16.dp),
+                elevation = androidx.compose.material3.CardDefaults.cardElevation(defaultElevation = 2.dp),
+                colors = androidx.compose.material3.CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                shape = MaterialTheme.shapes.large
+            ) {
+                Column(modifier = Modifier.padding(14.dp)) {
+                    Text(
+                        text = "Understand this verse",
+                        style = MaterialTheme.typography.titleSmall,
+                        color = MaterialTheme.colorScheme.primary
+                    )
 
-            when (selectedTab) {
-                0 -> {
-                    // Translation tab
-                    Text(
-                        text = poem.translation ?: "English translation not available.",
-                        modifier = Modifier.padding(top = 12.dp),
-                        style = MaterialTheme.typography.bodyLarge
-                    )
-                }
-                1 -> {
-                    // Explanation tab (English preferred)
-                    Text(
-                        text = poem.explanationEn ?: poem.explanation ?: "Explanation not available.",
-                        modifier = Modifier.padding(top = 12.dp),
-                        style = MaterialTheme.typography.bodyLarge
-                    )
+                    Spacer(modifier = Modifier.height(10.dp))
+
+                    // Tab row for Translation / Explanation
+                    val tabs = listOf("Translation", "Explanation")
+                    TabRow(selectedTabIndex = selectedTab) {
+                        tabs.forEachIndexed { index, title ->
+                            Tab(selected = selectedTab == index, onClick = { selectedTab = index }) {
+                                Text(title, modifier = Modifier.padding(12.dp))
+                            }
+                        }
+                    }
+
+                    when (selectedTab) {
+                        0 -> {
+                            Text(
+                                text = poem.translation ?: "English translation not available.",
+                                modifier = Modifier.padding(top = 12.dp),
+                                style = MaterialTheme.typography.bodyLarge
+                            )
+                        }
+                        1 -> {
+                            Text(
+                                text = poem.explanationEn ?: poem.explanation ?: "Explanation not available.",
+                                modifier = Modifier.padding(top = 12.dp),
+                                style = MaterialTheme.typography.bodyLarge
+                            )
+                        }
+                    }
                 }
             }
         }
